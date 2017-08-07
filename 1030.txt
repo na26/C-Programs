@@ -1,0 +1,17 @@
+Description
+8/13=0.615384615384615384615384...
+
+For 8/13, the 5-th digit after the decimal point is 8.
+
+Given three positive integers a, b, and n (all at most 60000), you are asked to compute a/b and print out the n-th digit after the decimal point.
+
+Input
+a b n
+
+Output
+The n-th digit after the decimal point of a/b
+
+Sample Input
+8 13 5
+Sample Output
+8

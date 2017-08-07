@@ -1,0 +1,18 @@
+Description
+In this exercise you have to write a program that can compute the product of the numbers (integers in this case) in a series of columns
+
+Input
+The first number of the input, N,  describes the number of columns that will follow, then N columns follow. The first row will contain the first integer of each column. This number M will indicate how many numbers will follow in the respective column. Note that this means that not each column needs to be of the same length.
+
+Output
+N numbers that represent the product of each column.
+
+Sample Input
+4
+3 2 3 4
+1 1 1 2
+2 3 2 2
+3   4 3
+      2
+Sample Output
+6 3 8 24

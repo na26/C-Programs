@@ -1,0 +1,29 @@
+Description
+Input three positive integers n, m, and p. Then input two matrices. The first one is a n (rows) by m (columns) matrix. The second one is a m (rows) by p (columns) matrix.
+
+Output the matrix product (should be n rows by p columns).
+
+You are required to store the matrices in heap memory.
+
+Input
+n, m, p, and two matrices
+
+Output
+Product of these two matrices
+
+Sample Input
+4
+3
+2
+14 9 3
+2 11 15
+0 12 17
+5 2 3
+12 25
+9 10
+8 5
+Sample Output
+273 455
+243 235
+244 205
+102 160

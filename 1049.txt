@@ -1,0 +1,78 @@
+Description
+A priority queue is an abstract data type which is like a regular queue, but additionally, each element is associated with a "priority value". For this problem, the queue elements are integers from 10000 to 19999, the priority values are integers from 1 to 10 (10 corresponds to the highest priority).
+
+The input consists of a list of operations, one operation per line. A sample input looks like the following:
+
+Insert 10000 2
+
+Insert 10000 2
+
+Insert 10000 3
+
+Insert 19444 9
+
+Pop
+
+Insert 10331 3
+
+Pop
+
+Pop
+
+Pop
+
+Pop
+
+Pop
+
+The operations are defined as follows:
+
+Insert x y: Add element x (10000<=x<=19999) to the queue with an associated priority value y (1<=y<=10). The queue allows duplicate elements. In the above example, we inserted 10000 three times. After these three insertions, there are two elements of value 10000 and priority 2 in the queue, and there is one element of value 10000 and priority 3 in the queue. You don't need to check the validity of the input. That is, if an input line says "Insert x y", then x is guaranteed to be between 10000 and 19999, and y is guaranteed to be between 1 and 10.
+Pop: Identify the element with the highest priority from the queue, output the element, and remove it from the queue. If the queue is empty, then output -1 (the queue remains empty). If there are multiple queue elements sharing the same highest priority value, then we remove and output the element that has the highest priority value and joined the queue the earliest.
+For the above sample input, the sample output should be:
+
+19444
+
+10000
+
+10331
+
+10000
+
+10000
+
+-1
+
+Brief explanation: At the moment of the first "Pop", 19444 has the highest priority value 9. At the moment of the second "Pop", both 10331 and 10000 share the highest priority value 3. We remove and output 10000 because it joined the queue earlier. At the moment of the third "Pop", 10331 has the highest priority value 3. Finally, at the moment of the sixth "Pop", the queue is empty.
+
+A priority queue can be implemented using a variety of methods. Your mark for this problem depends on the efficiency of your implementation.
+
+Time efficiency: The time efficiency of your implementation is judged based on the speed of insert and pop when there are a huge number of elements in the queue.
+
+Memory efficiency: The memory consumption of your queue should be dynamically adjusted based on the number of elements in it.
+
+Input
+A list of operations, one per line
+
+Output
+Corresponding output
+
+Sample Input
+Insert 10000 2
+Insert 10000 2
+Insert 10000 3
+Insert 19444 9
+Pop
+Insert 10331 3
+Pop
+Pop
+Pop
+Pop
+Pop
+Sample Output
+19444
+10000
+10331
+10000
+10000
+-1

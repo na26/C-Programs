@@ -1,0 +1,8 @@
+Description
+Input two positive integers. Compute their largest common factor and smallest common multiple.
+Input
+Output
+Sample Input
+2 3
+Sample Output
+1 6

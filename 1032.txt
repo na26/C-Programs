@@ -1,0 +1,16 @@
+Description
+Input three strings s1, s2, and s3 (one for each line). They may contain whitespaces. Output the number of times s2 and s3 occur as a substring of s1. 
+For example, if the input strings are "hello world”, “europe” and "wor", then the output should be “0 1”. As another example, if the input strings are "hello world hello”, “hello world” and "hel", then the output should be "1 2”. If the input strings are "hello world”, “hello” and "helo", then the output should be "1 0”.
+You are not allowed to use system functions defined in string.h.
+Input
+s1, s2 and s3
+
+Output
+two numbers
+
+Sample Input
+Hello World! Hello
+Hello
+World
+Sample Output
+2 1

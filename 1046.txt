@@ -1,0 +1,26 @@
+Description
+In the 3x3 grid below, the greatest sum of two adjacent numbers in any direction (up, down, left, right, or diagonally) is 22+23=45.
+
+21 22 23
+
+20 10 11
+
+17 16 15
+
+Input n and m. 1<=n<=100. 1<=m<=n. Then input a n x n grid. All integers in the grid are from 0 to 1000. Output the greatest sum of m adjacent numbers in any direction (along straight line only). 
+
+You are required to use malloc to dynamically allocate just enough space for storing the grid.
+
+Input
+n, m, and then followed by a n x n grid
+
+Output
+The greatest sum of m adjacent numbers in any direction
+
+Sample Input
+3 2
+21 22 23
+20 00 11
+17 06 15
+Sample Output
+45

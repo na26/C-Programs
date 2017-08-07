@@ -1,0 +1,39 @@
+Description
+Input n (1<=n<=10000) and then followed by n lines. Each line corresponds to a valid date, consisting of one string ("January", "February", ..., or "December"), one integer between 1 and 31, and one two digit integer representing the year (from 90 to 99, and then from 00 to 12). You do not have to worry about date validation. All dates in the input are valid dates.
+Please use structures to store the dates. Please use malloc to dynamically allocate just enough space for n structures. You are asked to sort the dates chronologically using the built-in qsort function. Please output the sorted list, one date per line, from most recent date to oldest. Please also use the built-in bsearch function to allow for a user query to check whether a specific date is in the list, and output either "Yes" or "No".
+Input
+n, the number of dates to sort,
+
+followed by n dates,
+
+followed by a user query in format day month year (e.g. “1 1 00” or “31 3 68”).
+(Note this is a different format as the rest of the dates are presented in)
+
+Output
+Sorted list of dates,
+followed by “Yes” or “No” to indicate whether the query date input by the user (e.g. 1 1 00 day month year) is in the list.
+Sample Input
+10
+January 1 01
+January 1 00
+February 28 99
+July 17 12
+September 10 12
+July 1 00
+June 30 90
+August 25 06
+May 27 08
+October 1 03
+1 1 00
+Sample Output
+September 10 12
+July 17 12
+May 27 08
+August 25 06
+October 1 03
+January 1 01
+July 1 00
+January 1 00
+February 28 99
+June 30 90
+Yes

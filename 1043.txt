@@ -1,0 +1,31 @@
+Description
+Input n and then followed by n strings, one string per line. Subsequently this is followed by input m, and then followed by m strings (one per line). Strings consist of lowercase English letters only. The maximum string length is 100 (at most 99 letters, plus '\0'). However, most strings are very short. That is, you should dynamically allocate just enough memory to store each string. You should also dynamically allocate just enough space for storing n+m string pointers.
+
+Please sort these n+m strings based on their lengths in descending order. String lengths are unique. There will be no ties. Output the sorted list of strings.
+
+Input
+n and then followed by n strings, m and then followed by m strings.
+
+Output
+Sorted list, one string per line
+
+Sample Input
+5
+abcdefghijk
+abcde
+a
+abcdefgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+zzzzzzzzzzzzzzzzzzzzzz
+3
+bb
+cccc
+hhhhhhhhhhhhhh
+Sample Output
+abcdefgaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+zzzzzzzzzzzzzzzzzzzzzz
+hhhhhhhhhhhhhh
+abcdefghijk
+abcde
+cccc
+bb
+a

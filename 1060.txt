@@ -1,0 +1,14 @@
+Description
+From the input of 10 numbers, sort only the even integers into ascending order.
+
+Print the list with all odd numbers in their corresponding place in the input and the even numbers sorted into ascending order.
+Input
+10 integers separated by spaces. (All integers are at most 32 bits)
+
+Output
+An evenly sorted list (even numbers in ascending order, odd numbers unchanged)
+Sample Input
+5 3 4 2 1 8 6 7 10 9
+
+Sample Output
+5 3 2 4 1 6 8 7 10 9

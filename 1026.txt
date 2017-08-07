@@ -1,0 +1,16 @@
+Description
+Delete a specific character from a string. Output the modified string.
+
+Input
+Character to be deleted
+
+String
+
+Output
+Modified string
+
+Sample Input
+A
+AscADef
+Sample Output
+scDef

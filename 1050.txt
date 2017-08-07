@@ -1,0 +1,56 @@
+Description
+You are working for a travel agency and are asked to write a computer program that can provide travel advice between cities based on a given map. The first line of the input of the program contains one integer n. n (2<=n<=10000) is the number of cities on the map. The second line of the input also contains an integer, m, (2<=m<=10000), which indicates the number of connections that will follow in the input below. Then, starting from the third line of the input, each line contains two integers from 1 to n, i.e. the connections between the cities. If a line says "a b", then it means that there is direct flight between city a and city b. There will be m of such connections. The last line also contains a pair of cities, say "c d", which will represent a query: "is there a connecting flight between c and d?"
+
+Here is one sample input:
+
+6
+
+7
+
+6 4
+
+3 4
+
+5 4
+
+3 2
+
+5 2
+
+5 1
+
+2 1
+
+1 6
+
+This sample input can be visualized as follows:
+
+File:6n-graf.svg
+
+For this flight network, there exists at least one route between every pair of cities. For example, between city 5 and 6, there exists a route with 1 stop at city 4.
+
+Given the input and the query, answer whether there is a route between cities c and d (note that this connection can be indirect). The output should be "Yes" or "No".
+
+Let x be the total number of lines of the input. We know for sure that x is much smaller than n square. Your implementation should take this into consideration (for the purpose of saving memory).
+
+For example, let us consider the case with n=10000 and x=10000 (so x is much less than n square). One easy way to represent a graph in memory is to use a n by n matrix. If the element in the i-th row and the j-th column equals 1, then that means node i and j are directly connected (0 means not directly connected). The memory consumption of the matrix representation is at least n square over 2 bits (each element only needs 1 bit; also, we only need to store half of the matrix due to symmetry). When n=10000, n square over 2 bits is just too much. You should find better ways to represent graphs in memory.
+
+Input
+Flight network
+
+Output
+Yes or No
+
+Sample Input
+6
+7
+6 4
+3 4
+5 4
+3 2
+5 2
+5 1
+2 1
+1 6
+Sample Output
+Yes

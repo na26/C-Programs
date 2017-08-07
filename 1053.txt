@@ -1,0 +1,27 @@
+Description
+In computer science, a stack is a last in, first out (LIFO) data structure. There are two fundamental operations, called push and pop. The push operation adds a new item to the top of the stack, or initializes the stack if it is empty. The pop operation removes an item from the top of the stack. You are asked to implement a stack using C. The stack elements should be stored in heap memory, using malloc. Please contact me if you believe the test data contain errors.
+
+Input
+Each line of input specifies one operation. For the push operation, the format is "Push x", where x is a positive integer. For the pop operation, the format is "Pop".
+Output
+For operation "Push x", the corresponding output line should be "x pushed". For operation "Pop", the corresponding output line should be "x popped", where x is the item removed from the top of the stack (if the stack is empty, then the output should be "-1 popped").
+Sample Input
+Push 10
+Push 20
+Push 30
+Pop
+Pop
+Push 40
+Pop
+Pop
+Pop
+Sample Output
+10 pushed
+20 pushed
+30 pushed
+30 popped
+20 popped
+40 pushed
+40 popped
+10 popped
+-1 popped

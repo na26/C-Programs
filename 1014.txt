@@ -1,0 +1,20 @@
+Description
+In this exercise you have to compute the area and circumference of a series of circles and output their sum. Specifically, the program will take two radii of two circles as input (r1 <= r2, both integers) and will output the sum of the areas and the circumferences of all circles starting with r1 and increasing at each step the radius by '1' until radius r2 has been reached. As an example, suppose 'r2-r1 = 2' then the program has to compute the sum of the areas and circumferences of three circles with radii r1,r1+1,r2
+
+Remember that the area of a circle equals Pi*r^2 and the circumference equals 2Pi*r.
+
+Set Pi to 3.14
+
+Input
+ Two integers r1 and r2 with r1<=r2
+
+Output
+ two floats, sumofareas and sumofcircumferences.
+
+The result should be in 3 digits precision.
+
+Sample Input
+3 4
+Sample Output
+78.500
+43.960
